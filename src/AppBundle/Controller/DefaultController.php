@@ -30,6 +30,14 @@ class DefaultController extends Controller
     }
 
     /**
+     * @Route("/cats-external", name="cats-external")
+     */
+    public function catsExternalAction()
+    {
+        return $this->render('default/cats-external.html.twig');
+    }
+
+    /**
      * @Route("/cats", name="cats")
      */
     public function catsAction()
