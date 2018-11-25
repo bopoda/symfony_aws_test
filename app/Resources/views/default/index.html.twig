@@ -2,6 +2,11 @@
 
 {% block body %}
     Any html
+    <ul>
+        <li><a href="{{ path('cats') }}">cats</a></li>
+        <li><a href="{{ path('cats-external') }}">cats external</a></li>
+        <li><a href="{{ path('json') }}">json</a></li>
+    </ul>
 {% endblock %}
 
 {% block stylesheets %}
