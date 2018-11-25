@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Group</th>
+        </tr>
+
+        {% for sale in sales %}
+            <tr>
+                <td>{{ sale.id }}</td>
+                <td>{{ sale.name }}</td>
+                <td>{{ sale.saleGroup }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
